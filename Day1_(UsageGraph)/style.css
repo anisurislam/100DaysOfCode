@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", system-ui;
+    transition: 0.3s;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F6E8DC;
+}
+
+.usage-graph-area {
+    width: 350px;
+}
+
+.my-balance-area {
+    background: #E7755E;
+    padding: 15px;
+    border-radius: 15px;
+    line-height: 30px;
+    color: white;
+}
+
+.my-balance-area h3 {
+    font-size: medium;
+}
+
+.graph-area {
+    background: #FEFAF6;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.graph-area h2 {
+    font-size: large;
+    margin-bottom: auto;
+}
+
+.graph-area .all-graphs {
+    /* height: 200px; */
+    padding: 30px 10px;
+}
+
+.graph-area .all-graphs .graph-group {
+    display: flex;
+    padding: 5px 0;
+}
+
+.graph-area .all-graphs .graph-group span {
+    width: 35px;
+}
+
+.graph-area .all-graphs .graph {
+    width: 100%;
+    margin-left: 10px;
+    background: #4F1787;
+    border-radius: 5px;
+}
+
+.graph-area .all-graphs .graph:hover {
+    background: #AD49E1;
+    box-shadow: 2px 2px 5px #69324d;
+}
+
+.graph-area .all-graphs .sunday-graph {
+    width: 150px;
+}
+
+.graph-area .all-graphs .monday-graph {
+    width: 50px;
+}
+
+.graph-area .all-graphs .tuesday-graph {
+    width: 100px;
+}
+
+.graph-area .all-graphs .wednesday-graph {
+    width: 140px;
+}
+
+.graph-area .all-graphs .thursday-graph {
+    width: 80px;
+}
+
+.graph-area .all-graphs .friday-graph {
+    width: 200px;
+}
+
+.graph-area .all-graphs .saturday-graph {
+    width: 70px;
+}
+.graph-area .all-graphs .popup {
+    background: #ff9ff3;
+    padding: 3px 7px;
+    border-radius: 7px;
+    font-size: smaller;
+    margin-left: 10px;
+    box-shadow: 2px 2px 5px #69324d;
+    opacity: 0;
+}
+
+.horizontal-line {
+    width: 100%;
+    height: 1px;
+    background: #000;
+}
+
+.usage-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 2px 0;
+}
+
+.usage-info>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+small {
+    color: rgb(99, 98, 98);
+}

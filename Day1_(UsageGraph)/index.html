@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1 of 100DaysOfCode: Usage Graph with HTML CSS and JS</title>
+    <!-- Google Font "Roboto"  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Main CSS  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="usage-graph-area">
+            <div class="my-balance-area">
+                <h3>My Balance</h3>
+                <h2>$1048.56</h2>
+            </div>
+            <div class="graph-area">
+                <h2>Spending - Last 7 Days</h2>
+                <div class="all-graphs">
+
+                    <div class="graph-group sunday">
+                        <span>Sun</span>
+                        <div class="graph sunday-graph"></div>
+                        <div class="popup">$150</div>
+                    </div>
+                    <div class="graph-group monday">
+                        <span>Mon</span>
+                        <div class="graph monday-graph"></div>
+                        <div class="popup">$50</div>
+                    </div>
+                    <div class="graph-group tuesday">
+                        <span>Tue</span>
+                        <div class="graph tuesday-graph"></div>
+                        <div class="popup">$100</div>
+                    </div>
+                    <div class="graph-group wednesday">
+                        <span>Wed</span>
+                        <div class="graph wednesday-graph"></div>
+                        <div class="popup">$140</div>
+                    </div>
+                    <div class="graph-group thursday">
+                        <span>Thu</span>
+                        <div class="graph thursday-graph"></div>
+                        <div class="popup">$80</div>
+                    </div>
+                    <div class="graph-group friday">
+                        <span>Fri</span>
+                        <div class="graph friday-graph"></div>
+                        <div class="popup">$200</div>
+                    </div>
+                    <div class="graph-group saturday">
+                        <span>Sat</span>
+                        <div class="graph saturday-graph"></div>
+                        <div class="popup">$70</div>
+                    </div>
+                </div>
+                <div class="horizontal-line"></div>
+                <div class="usage-info">
+                    <div>
+                        <small>Total This Month:</small>
+                        <h3>$3504.34</h3>
+                    </div>
+                    <div>
+                        <strong>+4.3%</strong>
+                        <small>from last month</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- JavaScript -->
+    <script src="./main.js"></script>
+</body>
+
+</html>
