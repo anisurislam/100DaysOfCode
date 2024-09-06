@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.4s;
+}
+
+body {
+    background: #4834d4;
+}
+
+.container {
+    min-width: 992px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.meme-popup-area {
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.button {
+    background: #686de0;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.popup {
+    position: absolute;
+    scale: 0;
+    background: #4e52cf;
+}
+
+.nije-nije {
+    left: 30%;
+    top: 0;
+    scale: 1;
+    animation: nije-nije-disappearing 0.5s forwards;
+}
+
+@keyframes nije-nije-appearing {
+    from {
+        top: 50%;
+        scale: 0;
+    }
+}
+
+@keyframes nije-nije-disappearing {
+    to {
+        top: 50%;
+        scale: 0;
+    }
+}
+
+.oi-mama {
+    top: 15%;
+    left: 0;
+    scale: 1;
+    animation: oi-mama-disappearing 0.5s forwards;
+}
+
+@keyframes oi-mama-appearing {
+    from {
+        top: 50%;
+        left: 50%;
+        scale: 0;
+    }
+}
+
+@keyframes oi-mama-disappearing {
+    to {
+        top: 50%;
+        left: 50%;
+        scale: 0;
+    }
+}
+
+.nice-and-attractive {
+    top: 47%;
+    left: -10%;
+    scale: 1;
+    animation: nice-and-attractive-disappearing 0.5s forwards;
+}
+
+@keyframes nice-and-attractive-appearing {
+    from {
+        left: 45%;
+        scale: 0;
+    }
+}
+
+@keyframes nice-and-attractive-disappearing {
+    to {
+        left: 45%;
+        scale: 0;
+    }
+}
+
+.natok-kom {
+    bottom: 15%;
+    left: 0;
+    scale: 1;
+    animation: natok-kom-disappearing 0.5s forwards;
+}
+
+@keyframes natok-kom-appearing {
+    from {
+        bottom: 50%;
+        left: 45%;
+        scale: 0;
+    }
+}
+
+@keyframes natok-kom-disappearing {
+    to {
+        bottom: 50%;
+        left: 45%;
+        scale: 0;
+    }
+}
+
+.she-has {
+    text-transform: capitalize;
+    left: 30%;
+    bottom: 0;
+    scale: 1;
+    animation: she-has-disappearing 0.5s forwards;
+}
+
+@keyframes she-has-appearing {
+    from {
+        bottom: 50%;
+        scale: 0;
+    }
+}
+
+@keyframes she-has-disappearing {
+    to {
+        bottom: 50%;
+        scale: 0;
+    }
+}
+
+.sojon-harano {
+    bottom: 15%;
+    right: 0;
+    scale: 1;
+    animation: sojon-harano-disappearing 0.5s forwards;
+}
+
+@keyframes sojon-harano-appearing {
+    from {
+        right: 50%;
+        bottom: 50%;
+        scale: 0;
+    }
+}
+
+@keyframes sojon-harano-disappearing {
+    to {
+        right: 50%;
+        bottom: 50%;
+        scale: 0;
+    }
+}
+
+.murubbi {
+    top: 47%;
+    right: -10%;
+    scale: 1;
+    animation: murubbi-disappearing 0.5s forwards;
+}
+
+@keyframes murubbi-appearing {
+    from {
+        right: 50%;
+        scale: 0;
+    }
+}
+
+@keyframes murubbi-disappearing {
+    to {
+        right: 50%;
+        scale: 0;
+    }
+}
+
+.hasina-kokhono {
+    top: 15%;
+    right: 0;
+    scale: 1;
+    animation: hasina-kokhono-disappearing 0.5s forwards;
+}
+
+@keyframes hasina-kokhono-appearing {
+    from {
+        right: 50%;
+        top: 50%;
+        scale: 0;
+    }
+}
+
+@keyframes hasina-kokhono-disappearing {
+    to {
+        right: 50%;
+        top: 50%;
+        scale: 0;
+    }
+}
+
+.middle-button {
+    width: 200px;
+    cursor: pointer;
+    z-index: 30;
+    user-select: none;
+}
+
+.middle-button:hover {
+    background: #8588ee;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    scale: 1.05;
+}
