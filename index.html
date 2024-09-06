@@ -4,41 +4,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>100 Days Of Code all Days</title>
+    <title>Daily Task MERNB03 All Day</title>
+    <!-- Google Font "Roboto" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Style -->
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background: #5f27cd;
+            font-family: "Roboto", system-ui;
+            transition: 0.4s;
+            color: white;
+        }
+
+        body {
+            background: #090057;
         }
 
         .container {
-            width: 992px;
+            max-width: 2048px;
             height: 100vh;
             margin: 0 auto;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
         }
 
-        a {
-            margin-top: 20px;
-            padding: 10px 20px;
+        .cards>h1 {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .cards {
+            padding: 15px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            width: 200px;
+            height: 160px;
+            padding: 20px 10px;
+            background: #273c75;
+            border-radius: 20px;
+        }
+
+        .card:hover {
+            background: #344985;
+            border-radius: 15px;
+        }
+
+        .card-content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card-content p {
+            font-size: 15px;
+        }
+
+        .card-content a {
+            width: 80%;
+            padding: 8px 0;
             background: #6c5ce7;
             color: white;
             text-decoration: none;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .card-content a:hover {
+            border-radius: 5px;
+            box-shadow: 0 0 5px white;
+        }
+
+        .card-content a:focus {
+            outline: none;
+            box-shadow: 0 0 5px white;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="content">
-            <a href="./Day1_(UsageGraph)/index.html" target="_blank">Day1 Usage Graph</a>
-            <a href="./Day2_(NavbarHeightChangeOnScroll)/index.html" target="_blank">Day2 Navbar Changes Height</a>
-            <a href="./Day3_(LightAndDarkModeToggle)/index.html" target="_blank">Day3 Light and Dark Mode</a>
-            <a href="./Day4_(YoutubeLandingPage)/index.html" target="_blank">Day4 Youtube Landing Page</a>
+        <div class="cards">
+            <h1>100 DAYS OF CODE</h1>
+            <!-- Just Add "card" class div to add more items  -->
+
+            <!-- Day 1 -->
+            <div class="card">
+                <div class="card-content">
+                    <a href="./Day1_(UsageGraph)/index.html" target="_blank">Day 1</a>
+                    <div>
+                        <p>Usage Graph with HTML CSS and JS</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Day 2 -->
+            <div class="card">
+                <div class="card-content">
+                    <a href="./Day2_(NavbarHeightChangeOnScroll)/index.html" target="_blank">Day 2</a>
+                    <div>
+                        <p>Navbar Changes Height with HTML CSS and JS</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Day 3 -->
+            <div class="card">
+                <div class="card-content">
+                    <a href="./Day3_(LightAndDarkModeToggle)/index.html" target="_blank">Day 3</a>
+                    <div>
+                        <p>Light and Dark Mode with HTML CSS and JS</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Day 4 -->
+            <div class="card">
+                <div class="card-content">
+                    <a href="./Day4_(YoutubeLandingPage)/index.html" target="_blank">Day 4</a>
+                    <div>
+                        <p>Youtube Landing Page with HTML and CSS</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Day 5 -->
+            <div class="card">
+                <div class="card-content">
+                    <a href="./Day5_(MemesPopup)/index.html" target="_blank">Day 5</a>
+                    <div>
+                        <p>Memes Popup Animation with HTML CSS and JS</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </body>
