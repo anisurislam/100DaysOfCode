@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day6 of 100DaysOfCode: BMI Calculator with HTML CSS and JS</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts "Roboto" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="bmi-area">
+            <div class="input-area">
+                <form>
+                    <div class="input">
+                        <div class="height input-field">
+                            <div>
+                                <input type="number" id="height-input" placeholder="Enter Height">
+                                <select>
+                                    <option value="cm">cm</option>
+                                    <option value="m">m</option>
+                                    <option value="inch">inch</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="weight input-field">
+                            <input type="number" id="weight-input" placeholder="Enter Weight (KG)">
+                        </div>
+                    </div>
+                    <div class="calculate-button">
+                        <input type="submit" value="Calculate BMI">
+                    </div>
+                </form>
+            </div>
+            <div class="overlay d-none"></div>
+            <div class="result d-none">
+                <i class="fa-solid fa-circle-xmark"></i>
+                <div class="result-info">
+                    <div class="title">
+                        <h2>Your BMI is</h2>
+                        <h1></h1>
+                    </div>
+                    <div class="suggestion">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./main.js"></script>
+</body>
+
+</html>
