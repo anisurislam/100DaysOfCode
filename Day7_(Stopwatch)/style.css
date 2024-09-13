@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #1a2238;
+}
+
+.container {
+    max-width: 1140px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.stopwatch-area>h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.stopwatch-display-area {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 992px;
+}
+
+.stopwatch-display {
+    display: flex;
+    gap: 20px;
+    font-size: 5vw;
+    text-shadow: 0 0 10px white;
+}
+
+.stopwatch-control {
+    display: flex;
+    justify-content: space-between;
+}
+
+.control {
+    background: #4b7bec;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: 0.4s;
+}
+
+.control:hover {
+    scale: 1.1;
+}
+
+
+/* ----------- Responsive design ----------- */
+/* 
+@media (max-width: 768px) {
+    .stopwatch-display {
+        font-size: 150%;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .stopwatch-display {
+        font-size: 100%;
+    }
+} */
