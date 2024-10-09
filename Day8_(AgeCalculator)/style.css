@@ -1,0 +1,183 @@
+:root {
+    --page-bg-color: #161D6F;
+    --text-color: #ffffff;
+    --option-color: #6c5ce7;
+    --option-hover-color: #a29bfe;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+    transition: 0.3s;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--page-bg-color);
+}
+
+.container {
+    color: var(--text-color);
+    align-items: flex-start;
+}
+
+.age-calculator {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.age-calculator>h1 {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.selection-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.selection-area>div {
+    width: calc(50% - 5px);
+}
+
+/* Select and Option Styles */
+.select {
+    background: var(--option-color);
+    text-align: center;
+    font-weight: 600;
+    padding: 10px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.select:hover {
+    background: var(--option-hover-color);
+}
+
+.option-area {
+    width: 100%;
+    max-height: 250px;
+    overflow-y: scroll;
+    background: #3498db;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.662);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    animation: option-area-disappearing 0.3s forwards;
+}
+
+@keyframes option-area-appearing {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes option-area-disappearing {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+.option {
+    background: var(--option-color);
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.option:hover {
+    background: var(--option-hover-color);
+}
+
+/* Day Select Styles */
+.day-selection-area {
+    position: relative;
+}
+
+.month-selection-area {
+    position: relative;
+}
+
+.year-selection-area {
+    position: relative;
+}
+
+/* Calculate Button */
+.calculate-button {
+    margin-top: 10px;
+}
+
+.calculate-button button {
+    width: 100%;
+    background: var(--option-hover-color);
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.calculate-button button:hover {
+    background: var(--option-color);
+}
+
+/* Age Display */
+.age-display-area {
+    background: #6c5ce7;
+    padding: 15px;
+    border-radius: 10px;
+    line-height: 30px;
+    color: white;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.age-display-area h3 {
+    padding-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 575.98px) {
+    .selection-area {
+        flex-direction: column;
+    }
+
+    .selection-area>div {
+        width: 150px;
+    }
+
+    .calculate-button button {
+        width: 150px;
+        margin: 0 auto;
+        display: block;
+    }
+}

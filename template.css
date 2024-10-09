@@ -1,0 +1,150 @@
+:root {
+    --primary-color: #54a0ff;
+    --primary-hover-color: #0077ff;
+    --disabled-bg-color: #a9a9a9;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+/* Input Class Styles */
+.input {
+    font-size: medium;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.input:focus {
+    outline: 2px solid var(--primary-color);
+    border: 1px solid #ccc;
+}
+
+.input:hover {
+    border: 1px solid var(--primary-color);
+}
+
+/* Button Class Styles */
+.button {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: medium;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--primary-hover-color);
+    box-shadow: 1px 1px 5px #7a7a7a;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Disabled Class Styles */
+.disabled,
+.disabled:hover,
+.disabled:focus {
+    background-color: var(--disabled-bg-color);
+    font-style: italic;
+    cursor: default;
+    box-shadow: none;
+    outline: none;
+    color: white;
+}
+
+/* Link Class Styles */
+.link {
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* popup-from-top Class Styles */
+.popup-from-top {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: popup-from-top-appearing 0.2s forwards;
+}
+
+@keyframes popup-from-top-appearing {
+    0% {
+        top: -50vh;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes popup-from-top-disappearing {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: -50vh;
+    }
+}
+
+/* popup-to-center Class Styles */
+.popup-from-left-to-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: popup-from-left-to-center-appearing 0.2s forwards;
+}
+
+@keyframes popup-from-left-to-center-appearing {
+    0% {
+        left: -50vw;
+    }
+
+    100% {
+        left: 50%;
+    }
+}
+
+@keyframes popup-from-left-to-center-disappearing {
+    0% {
+        left: 50%;
+    }
+
+    100% {
+        left: -50vw;
+    }
+}
+
+/* d-none Class Styles */
+.d-none {
+    display: none;
+}
+
+/* flex-center Class Styles */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* flex-center-page Class Styles */
+.flex-center-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
