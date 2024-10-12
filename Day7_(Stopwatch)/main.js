@@ -3,6 +3,9 @@ let secondsDisplay = document.querySelector(".second h2");
 let minutesDisplay = document.querySelector(".minute h2");
 let hoursDisplay = document.querySelector(".hour h2");
 
+let timeStampButton = document.querySelector(".time-stamp");
+let timeStampDisplay = document.querySelector(".time-stamp-display");
+
 ///////////////////////////
 let milliseconds = 0;
 let seconds = 0;
@@ -49,10 +52,6 @@ function stopwatch() {
     }
 }
 
-
-
-
-
 let stopwatchInterval;
 let playPause = document.querySelector(".play-pause");
 playPause.addEventListener("click", () => {
@@ -82,4 +81,14 @@ reset.addEventListener("click", () => {
     minutesDisplay.innerHTML = "00";
     hoursDisplay.innerHTML = "00";
     playPause.innerHTML = '<i class="fa-solid fa-play"></i>';
+})
+
+// Time Stamp
+timeStampButton.addEventListener("click", () => {
+    let stampArea = document.querySelector(".time-stamp-area");
+    stampArea.style.display = "flex";
+    // creating a p tag and insert it to the begging of timeStampDisplay
+    let pTag = document.createElement("p");
+    pTag.innerHTML = hoursDisplay.innerHTML + ":" + minutesDisplay.innerHTML + ":" + secondsDisplay.innerHTML + ":" + millisecondsDisplay.innerHTML
+    timeStampDisplay.insertBefore(pTag, timeStampDisplay.firstChild);
 })
