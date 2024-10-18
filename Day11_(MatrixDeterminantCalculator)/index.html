@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 11 of 100DaysOfCode: Determinant of Matrix Calculator with HTML CSS and JS</title>
+    <!-- Google Font "Roboto" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="../template.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container flex-center-page">
+        <h1 class="title">Determinant Calculator</h1>
+        <div class="switcher">
+            <button class="button">2x2</button>
+            <button class="button disabled">3x3</button>
+        </div>
+        <div class="calculator-area">
+            <form>
+                <div class="determinant determinant3x3 ">
+                    <div class="row">
+                        <input type="number" class="a11" placeholder="a11">
+                        <input type="number" class="a12" placeholder="a12">
+                        <input type="number" class="a13" placeholder="a13">
+                    </div>
+                    <div class="row">
+                        <input type="number" class="a21" placeholder="a21">
+                        <input type="number" class="a22" placeholder="a22">
+                        <input type="number" class="a23" placeholder="a23">
+                    </div>
+                    <div class="row">
+                        <input type="number" class="a31" placeholder="a31">
+                        <input type="number" class="a32" placeholder="a32">
+                        <input type="number" class="a33" placeholder="a33">
+                    </div>
+                </div>
+                <div class="determinant determinant2x2 ">
+                    <div class="row">
+                        <input type="number" class="a11" placeholder="a11">
+                        <input type="number" class="a12" placeholder="a12">
+                    </div>
+                    <div class="row">
+                        <input type="number" class="a21" placeholder="a21">
+                        <input type="number" class="a22" placeholder="a22">
+                    </div>
+                </div>
+                <div class="calculate-button">
+                    <button class="button">Calculate Value</button>
+                </div>
+            </form>
+        </div>
+        <div class="result-area">
+            <h2></h2>
+        </div>
+
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", system-ui;
+    transition: 0.3s;
+}
+
+body {
+    background: #091057;
+}
+
+.container {
+    flex-direction: column;
+    color: white;
+}
+
+/* Determinant Switcher */
+.switcher {
+    padding: 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.disabled {
+    border-bottom: 2px solid white;
+    font-weight: bold;
+}
+
+/* Calculation */
+.calculator-area {
+    width: 95%;
+    max-width: 600px;
+}
+
+.determinant {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    margin: 20px 0;
+}
+
+.calculator-area form {
+    background: #161D6F;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px white;
+}
+
+/* 3x3 Determinant Style */
+
+.calculator-area form .determinant3x3 .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.calculator-area form .determinant3x3 .row input {
+    width: 25%;
+    border: none;
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+    outline: none;
+    font-size: 1rem;
+}
+
+/* 2x2 Determinant Style */
+
+.calculator-area form .determinant2x2 {
+    display: none;
+}
+
+.calculator-area form .determinant2x2 .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.calculator-area form .determinant2x2 .row input {
+    width: 45%;
+    border: none;
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1rem;
+    outline: none;
+}
+
+.result-area {
+    margin-top: 20px;
+    color: white;
+    font-size: 1.1rem;
+}
