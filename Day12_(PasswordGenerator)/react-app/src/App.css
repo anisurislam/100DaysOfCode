@@ -1,0 +1,106 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #273c75;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.button-style {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+}
+
+/* Password Generator */
+.password-gen-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.password-generator {
+  width: 350px;
+  height: 450px;
+  background: #192a56;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 3px 8px rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 15px;
+}
+.password-generator > div:first-of-type {
+  flex: 0.3;
+  height: 30%;
+}
+.password-generator > div:last-of-type {
+  flex: 0.7;
+  height: 70%;
+}
+
+/* Password component */
+.password {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 5px;
+}
+.password .password-field {
+  color: #fff;
+  background: #4a628a;
+  flex: 1.5;
+}
+/* Copy button */
+.copy-button {
+  flex: 0.6;
+  background: #d2e0fb;
+  cursor: pointer;
+}
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+/* Generate button */
+.generate-button-area {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.generate-button {
+  width: 100%;
+  background: #eef5ff;
+  color: #000000;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+  border: 1px solid #192a56;
+  outline: 1px solid #eef5ff;
+}
+.generate-button:hover {
+  background: #dde6ed;
+  width: 95%;
+}
+.generate-button:active {
+  width: 100%;
+  background: #eef5ff;
+}
+
+/* History Password List */
+.history {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.password-list {
+  height: 100%;
+  overflow-y: auto;
+}
